@@ -1,0 +1,7 @@
+#!/usr/bin/ruby
+
+require 'chronic'
+
+date = Chronic.parse(ARGV[0])
+
+puts date.utc

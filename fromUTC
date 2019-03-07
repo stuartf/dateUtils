@@ -1,0 +1,11 @@
+#!/usr/bin/ruby
+
+require 'chronic'
+require 'active_support/core_ext/time'
+
+Time.zone = 'UTC'
+Chronic.time_class = Time.zone
+
+date = Chronic.parse(ARGV[0])
+
+puts date.localtime
